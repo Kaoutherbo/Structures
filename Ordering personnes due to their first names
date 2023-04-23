@@ -1,0 +1,39 @@
+#include<stdio.h>
+#include<string.h>
+	typedef struct person
+	 {
+	 	char f_name[20];
+	 	char l_name[20];
+	 	int age;
+	 }person;
+int main(){
+   int i,j,n;
+   person a[n];
+   printf("Enter number of names :");
+   scanf("%d",&n);
+     for( i=0;i<n;i++){
+   	printf("Enter your first name: " );
+   	scanf("%s",&a[i].f_name);
+   	printf("Enter your last name: " );
+   	scanf("%s",&a[i].l_name);
+   	printf("Enter your age: " );
+   	scanf("%d",&a[i].age);	
+  }
+  
+   char s[100];
+   for(i=0;i<n;i++){
+      for(j=i+1;j<n;j++){
+         if(strcmp(a[i].f_name,a[j].f_name)>0){
+            strcpy(s,a[i].f_name);
+            strcpy(a[i].f_name,a[j].f_name);
+            strcpy(a[j].f_name,s);
+           
+         }
+      }
+   }
+   printf("The sorted order of names are:");
+   	for(j=0;j<n;j++){
+      printf("\n %s",a[j].f_name);
+   }
+   return 0;
+}
