@@ -22,11 +22,11 @@ int main()
 	{
 		if(T[i].note < 10)
 		{
-printf("%s\t %s\t %f\t adjourned ",T[i].f_name,Ti].l_name,T[i].note);
+printf("%s\t %s\t %f\t adjourned ",T[i].f_name,T[i].l_name,T[i].note);
 			
 		}else
 		{
-printf("%s\t %s\t %f\t admitted ",T[i].f_name,Ti].l_name,T[i].note);
+printf("%s\t %s\t %f\t admitted ",T[i].f_name,T[i].l_name,T[i].note);
 			
 		}
 	}
